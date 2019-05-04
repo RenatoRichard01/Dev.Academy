@@ -18,6 +18,8 @@ public class CarroTest {
 		car1.imprime();
 		car2.imprime();
 		car3.imprime();
+		//Ele muda o escopo de um método ou atributo. Com o static, ao invés deles pertencerem à instância do objeto, eles pertencem à classe.
+		//O modificador também pode ser aplicado para classes, como veremos a seguir.
 		
 	}
 }
