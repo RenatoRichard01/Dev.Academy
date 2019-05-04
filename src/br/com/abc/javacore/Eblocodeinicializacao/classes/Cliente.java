@@ -5,6 +5,7 @@ public class Cliente {
     // 3 - Bloco de inicializacao Ã© executado
     // 4 - O construtor Ã© executado
     private int[] parcelas;
+    // Boas praticas dizem que o bloco de inicialização deve ser iniciado antes do construtor.
     {
         parcelas = new int[100];
         System.out.println("Dentro do bloco de inicializacao");
