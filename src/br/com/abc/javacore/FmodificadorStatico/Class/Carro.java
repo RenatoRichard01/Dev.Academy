@@ -3,9 +3,8 @@ package br.com.abc.javacore.FmodificadorStatico.Class;
 public class Carro {
 	private String nome;
 	private double velocMax;
-	public static double velocLim = 240;
-	//apos a criacao do tipo static o up da variavel se torna pertencente a classe
-	//e não apenas do objeto.
+	private static double velocLim = 240;
+	//apos a criacao do tipo static o up da variavel se torna pertencente a classe e não apenas do objeto.
 	
 	public Carro(String nome, double velocMax) {
 		this.nome = nome;
@@ -18,9 +17,7 @@ public class Carro {
 		System.out.println("Velocidade Limite: "+velocLim);
 	}
 	public Carro() {
-		
 	}
-	
 	public String getNome() {
 		return nome;
 	}
@@ -33,6 +30,11 @@ public class Carro {
 	public void setVelocMax(double velocMax) {
 		this.velocMax = velocMax;
 	}
-	
+	public static double getVelocLim() {
+		return velocLim;
+	}
+	public static void setVelocLim(double velocLim) {
+		Carro.velocLim = velocLim;
+	}
 	
 }

@@ -12,7 +12,8 @@ public class CarroTest {
 		car3.imprime();
 		//car1.setVelocLim(300);
 		//Metodologia pede que quando houver variaveis do tipo static, quem deve chamar o metodo/variavel e a propria classe.
-		Carro.velocLim = 300.0;
+		//Carro.velocLim = 300.0;
+		Carro.setVelocLim(300);
 		System.out.println("====================");
 		car1.imprime();
 		car2.imprime();
